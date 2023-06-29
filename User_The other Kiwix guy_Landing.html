@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://library.kiwix.org/viewer#wikipedia_zh_all_maxi_2023-03/A/User:The_other_Kiwix_guy/Landing -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>User:The other Kiwix guy/Landing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="./User_The other Kiwix guy_Landing_files/taskbar.css" rel="Stylesheet">
+    <link type="text/css" href="./User_The other Kiwix guy_Landing_files/autoComplete.css" rel="Stylesheet">
+    <script type="text/javascript" src="./User_The other Kiwix guy_Landing_files/viewer_settings.js"></script>
+    <script type="text/javascript" src="./User_The other Kiwix guy_Landing_files/viewer.js" defer=""></script>
+    <script type="text/javascript" src="./User_The other Kiwix guy_Landing_files/autoComplete.min.js"></script>
+    <script>
+      function getRootLocation() {
+        const p = location.pathname;
+        return p.slice(0, p.length - '/viewer'.length);
+      }
+
+      const root = getRootLocation();
+      const blankPageUrl = root + "/skin/blank.html?cacheid=6b1fa032";
+
+      if ( location.hash == '' ) {
+        location.href = root + '/';
+      }
+    </script>
+  </head>
+
+  <body style="margin:0" onload="setupViewer()">
+    <div class="kiwix" style="display: block;" id="kiwixtoolbarwrapper">
+      <div id="kiwixtoolbar" class="ui-widget-header">
+        <div class="kiwix_centered">
+          <div class="kiwix_searchform" style="display: inline;">
+            <form class="kiwixsearch" method="GET" action="javascript:performSearch()" id="kiwixsearchform">
+              <label for="kiwixsearchbox">🔍</label>
+              <div class="autoComplete_wrapper" role="combobox" aria-owns="autoComplete_list_1" aria-haspopup="true" aria-expanded="false"><input autocomplete="off" class="ui-autocomplete-input" id="kiwixsearchbox" name="pattern" type="text" title="Search &#39;维基百科&#39;" aria-label="Search &#39;维基百科&#39;" placeholder="Search &#39;维基百科&#39;" aria-controls="autoComplete_list_1" aria-autocomplete="both"><ul id="autoComplete_list_1" role="listbox" hidden=""></ul></div>
+            </form>
+          </div>
+            <input type="checkbox" id="kiwix_button_show_toggle">
+            <label for="kiwix_button_show_toggle"><img src="./User_The other Kiwix guy_Landing_files/caret.png" alt=""></label>
+            <div class="kiwix_button_cont">
+                <a id="kiwix_serve_taskbar_library_button" title="Go to welcome page" aria-label="Go to welcome page" href="https://library.kiwix.org/"><button>🏠</button></a>
+              <span id="kiwix_serve_taskbar_book_ui_group" style="display: inline;">
+                <a id="kiwix_serve_taskbar_home_button" title="Go to the main page of &#39;维基百科&#39;" aria-label="Go to the main page of &#39;维基百科&#39;" onclick="gotoMainPageOfCurrentBook()"><button>维基百科</button></a>
+                <a id="kiwix_serve_taskbar_random_button" title="Go to a randomly selected page" aria-label="Go to a randomly selected page" onclick="gotoRandomPage()">
+                  <button>🎲</button>
+                </a>
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <iframe id="content_iframe" referrerpolicy="same-origin" onload="on_content_load()" src="./User_The other Kiwix guy_Landing_files/blank.html" title="ZIM content" width="100%" style="border:0px" __idm_frm__="15" height="698.5999755859375">
+    </iframe>
+
+    <script>
+    </script>
+  
+
+</body></html>
