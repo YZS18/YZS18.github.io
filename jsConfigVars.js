@@ -1,1 +1,0 @@
-(window.RLQ=window.RLQ||[]).push(function() {});
